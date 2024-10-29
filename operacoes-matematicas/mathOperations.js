@@ -1,6 +1,12 @@
 // mathOperations.js
-export const multiply = (a, b) => a * b;
+const multiply = (a, b) => a * b;
 
-export const calculateArea = (width, height) => {
-  return multiply(width, height);
+const calculateArea = (width, height) => {
+  // Referencie a função multiply através de exports para que possa ser espiada no teste
+  return module.exports.multiply(width, height);
+};
+
+module.exports = {
+  multiply,
+  calculateArea
 };

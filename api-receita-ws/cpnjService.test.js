@@ -1,5 +1,5 @@
 // cnpjService.test.js
-import { getCnpjInfo } from './cnpjService';
+const { getCnpjInfo } = require('./cnpjService');
 
 // Mock da função fetch
 global.fetch = jest.fn(() =>

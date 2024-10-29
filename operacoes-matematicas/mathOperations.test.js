@@ -1,5 +1,5 @@
 // mathOperations.test.js
-import * as mathOperations from './mathOperations';
+const mathOperations = require('./mathOperations'); // Importa o módulo corretamente
 
 test('Deve calcular a área chamando a função multiply', () => {
   // Espia a função multiply
